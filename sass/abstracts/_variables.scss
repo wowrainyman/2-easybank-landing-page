@@ -1,0 +1,17 @@
+// COLORS
+$color-primary: #30c88f;
+$color-secondary: #2ab6d9;
+$gradient-color-primary: linear-gradient(
+  135deg,
+  $color-primary 0%,
+  $color-secondary 99.58%
+);
+
+$text-primary-color: #2d314d;
+$text-secondary-color: #9597a5;
+
+// FONT
+$default-font-size: 1.8rem;
+
+//Margins and Paddings
+$default-body-lr-padding: 16.5rem;

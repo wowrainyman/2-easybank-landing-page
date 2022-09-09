@@ -1,0 +1,35 @@
+/*
+0 - 600px:      Phone
+
+$breakpoint arguement choices:
+- phone
+
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+::selection {
+  color: #30c88f; }
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #2d314d; }
+
+body {
+  width: 100vw;
+  margin: 2rem;
+  background-color: aquamarine; }

@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $default-body-lr-padding;
+  height: 8rem;
+
+  &__navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      margin: 0 2rem;
+      text-decoration: none;
+      list-style: none;
+      color: $text-secondary-color;
+      font-size: 1.4rem;
+    }
+  }
+}

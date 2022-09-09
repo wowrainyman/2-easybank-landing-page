@@ -1,0 +1,115 @@
+/*
+0 - 600px:      Phone
+
+$breakpoint arguement choices:
+- phone
+
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+::selection {
+  color: #30c88f; }
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #2d314d; }
+
+.button {
+  padding: 0.8rem 3.4rem;
+  border-radius: 2.2rem;
+  background: linear-gradient(135deg, #30c88f 0%, #2ab6d9 99.58%);
+  outline-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.8rem; }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16.5rem;
+  height: 8rem; }
+  .header__navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__navigation__list li {
+      margin: 0 2rem;
+      text-decoration: none;
+      list-style: none;
+      color: #9597a5;
+      font-size: 1.4rem; }
+
+body {
+  margin: 0 auto;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.main {
+  overflow: hidden;
+  position: relative; }
+  .main__bg {
+    position: absolute;
+    right: -55rem;
+    top: -25rem; }
+  .main__fr {
+    position: absolute;
+    right: -15.5rem;
+    top: -10rem; }
+  .main .presentation {
+    background-color: white;
+    display: grid;
+    padding: 0 16.5rem;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    height: 65rem; }
+    .main .presentation__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      .main .presentation__text__header {
+        margin-bottom: 2.4rem;
+        font-weight: 300;
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+        color: #2d314d; }
+      .main .presentation__text__sub {
+        margin-bottom: 3.6rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: #9597a5; }
+    .main .presentation__media {
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: 10rem; }
+      .main .presentation__media__front {
+        position: absolute;
+        top: -15rem; }
