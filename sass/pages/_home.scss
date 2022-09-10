@@ -11,27 +11,31 @@ body {
 .main {
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fafafa;
 
   &__bg {
     position: absolute;
-    right: -55rem;
+    right: -45rem;
     top: -25rem;
   }
 
   &__fr {
     position: absolute;
-    right: -15.5rem;
+    right: -13.5rem;
     top: -10rem;
   }
 
   .presentation {
-    background-color: white;
+    margin: 0 auto;
     display: grid;
-    padding: 0 $default-body-lr-padding;
     grid-template-columns: 1fr 1.2fr;
     grid-template-rows: 1fr;
     justify-content: center;
     height: 65rem;
+    z-index: 2;
 
     &__text {
       display: flex;
@@ -64,6 +68,135 @@ body {
       &__front {
         position: absolute;
         top: -15rem;
+      }
+    }
+  }
+
+  .suggestion {
+    background-color: $light-gray-background;
+    margin-top: 5rem;
+    padding-bottom: 9.4rem;
+
+    &__content {
+      margin-top: 7rem;
+      display: flex;
+      flex-direction: column;
+
+      &__header {
+        font-weight: 300;
+        font-size: 4rem;
+        line-height: 6.4rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: $text-primary-color;
+      }
+
+      &__sub {
+        margin-top: 1.6rem;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: $text-secondary-color;
+      }
+
+      &__options {
+        margin-top: 6.7rem;
+        display: flex;
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+
+          img {
+            height: 7.2rem;
+            width: 7.2rem;
+          }
+
+          h3 {
+            margin-top: 4rem;
+            font-weight: 300;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            color: $text-primary-color;
+          }
+
+          span {
+            margin-top: 2.6rem;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $text-secondary-color;
+          }
+        }
+
+        &__item:not(:last-child) {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+
+    &__header {
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 64px;
+      color: $text-primary-color;
+    }
+
+    &__content {
+      display: flex;
+      margin-top: 4rem;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding-bottom: 2.4rem;
+
+        img {
+          width: 100%;
+          height: 20rem;
+          border-radius: 5px 5px 0px 0px;
+        }
+
+        .image__sub {
+          margin-top: 2.5rem;
+          margin-left: 2.4rem;
+          margin-right: 2.4rem;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 18px;
+          color: $text-secondary-color;
+        }
+
+        h3 {
+          margin-top: 0.8rem;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          color: $text-primary-color;
+          margin-left: 2.4rem;
+          margin-right: 2.4rem;
+        }
+
+        .sub {
+          margin-top: 0.8rem;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 18px;
+          color: $text-secondary-color;
+          margin-left: 2.4rem;
+          margin-right: 2.4rem;
+        }
+      }
+
+      &__item:not(:last-child) {
+        margin-right: 3rem;
       }
     }
   }

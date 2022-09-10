@@ -3,18 +3,26 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  background-color: #ffffff;
 }
 
 body {
   box-sizing: border-box;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 ::selection {
   color: $color-primary;
+}
+
+.container {
+  max-width: 111rem;
+  margin: 0 auto;
 }
