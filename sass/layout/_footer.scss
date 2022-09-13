@@ -1,4 +1,98 @@
 .footer {
   background-color: $footer-background-color;
   width: 100%;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    &__social {
+      margin-right: 13rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__list {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+
+        a {
+          width: 2rem;
+          height: 2rem;
+          background-color: white;
+          display: block;
+
+          &:hover {
+            background-color: $color-primary;
+            cursor: pointer;
+          }
+        }
+
+        .facebook-icon {
+          -webkit-mask-image: url(/images/icon-facebook.svg);
+          mask-image: url(/images/icon-facebook.svg);
+        }
+        .youtube-icon {
+          -webkit-mask-image: url(/images/icon-youtube.svg);
+          mask-image: url(/images/icon-facebook.svg);
+        }
+        .twitter-icon {
+          -webkit-mask-image: url(/images/icon-twitter.svg);
+          mask-image: url(/images/icon-facebook.svg);
+        }
+        .pinterest-icon {
+          -webkit-mask-image: url(/images/icon-pinterest.svg);
+          mask-image: url(/images/icon-facebook.svg);
+        }
+        .instagram-icon {
+          -webkit-mask-image: url(/images/icon-instagram.svg);
+          mask-image: url(/images/icon-facebook.svg);
+        }
+
+        li:not(:last-child) {
+          margin-right: 1.3rem;
+        }
+      }
+    }
+
+    &__nav {
+      margin-right: auto;
+      &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 0.8rem;
+        text-decoration: none;
+        list-style: none;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 26px;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    &__copy-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      span {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        color: $text-secondary-color;
+      }
+    }
+  }
 }

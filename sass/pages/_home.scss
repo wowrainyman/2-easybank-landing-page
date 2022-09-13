@@ -174,7 +174,8 @@ body {
           color: $text-secondary-color;
         }
 
-        h3 {
+        a {
+          display: block;
           margin-top: 0.8rem;
           font-weight: 300;
           font-size: 16px;
@@ -182,6 +183,12 @@ body {
           color: $text-primary-color;
           margin-left: 2.4rem;
           margin-right: 2.4rem;
+          text-decoration: none;
+
+          &:hover {
+            color: $color-primary;
+            cursor: pointer;
+          }
         }
 
         .sub {
