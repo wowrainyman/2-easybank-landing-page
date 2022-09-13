@@ -5,6 +5,10 @@
   align-items: center;
   height: 8rem;
 
+  @include respond(phone) {
+    padding: 2.2rem 2.4rem;
+  }
+
   &__navigation {
     height: 100%;
     display: flex;
@@ -52,6 +56,15 @@
           color: $text-secondary-color;
         }
       }
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  & .button {
+    @include respond(phone) {
+      display: none;
     }
   }
 }
