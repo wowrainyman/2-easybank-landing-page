@@ -107,20 +107,20 @@ body {
             background-color: #30c88f;
             cursor: pointer; }
         .footer__content__social__list .facebook-icon {
-          -webkit-mask-image: url(/images/icon-facebook.svg);
-          mask-image: url(/images/icon-facebook.svg); }
+          -webkit-mask-image: url(../images/icon-facebook.svg);
+          mask-image: url(../images/icon-facebook.svg); }
         .footer__content__social__list .youtube-icon {
-          -webkit-mask-image: url(/images/icon-youtube.svg);
-          mask-image: url(/images/icon-facebook.svg); }
+          -webkit-mask-image: url(../images/icon-youtube.svg);
+          mask-image: url(../images/icon-facebook.svg); }
         .footer__content__social__list .twitter-icon {
-          -webkit-mask-image: url(/images/icon-twitter.svg);
-          mask-image: url(/images/icon-facebook.svg); }
+          -webkit-mask-image: url(../images/icon-twitter.svg);
+          mask-image: url(../images/icon-facebook.svg); }
         .footer__content__social__list .pinterest-icon {
-          -webkit-mask-image: url(/images/icon-pinterest.svg);
-          mask-image: url(/images/icon-facebook.svg); }
+          -webkit-mask-image: url(../images/icon-pinterest.svg);
+          mask-image: url(../images/icon-facebook.svg); }
         .footer__content__social__list .instagram-icon {
-          -webkit-mask-image: url(/images/icon-instagram.svg);
-          mask-image: url(/images/icon-facebook.svg); }
+          -webkit-mask-image: url(../images/icon-instagram.svg);
+          mask-image: url(../images/icon-facebook.svg); }
         .footer__content__social__list li:not(:last-child) {
           margin-right: 1.3rem; }
     .footer__content__nav {
